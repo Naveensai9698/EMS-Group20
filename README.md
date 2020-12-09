@@ -1,2 +1,3 @@
-# EMS-Group20
-For course project CIS 634 
+# Flask-Webapplication-with-mysql
+Python Flask Web application with mysql database
+If you need any help Reach me at ## vasanth@pinesphere.com

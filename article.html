@@ -1,0 +1,37 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+  <h1 style="text-transform: capitalize;">{{article.title}}</h1>
+  <small>works on {{article.author}}</small>
+  <hr>
+  <div style="padding-top: 10px;">
+    <span style="font-weight: 700;">Job : </span>
+    <span style="text-transform: capitalize;">{{article.body | safe }}</span>
+    
+  </div>
+  <div style="padding-top: 10px;">
+    <span style="font-weight: 700;">Phone</span>
+     : {{article.phone | safe }}
+  </div>
+  <div style="padding-top: 10px;">
+    <span style="font-weight: 700;">Email</span>
+     : {{article.email | safe }}
+  </div>
+  <div style="padding-top: 10px;">
+    <span style="font-weight: 700;">Experience</span>
+     : {{article.experience | safe }}
+  </div>
+  <div style="padding-top: 10px;">
+    <span style="font-weight: 700;">Salary</span>
+     : {{article.salary | safe }}
+  </div>
+  <div style="padding-top: 10px;">
+    <span style="font-weight: 700;">Address : </span>
+    <span style="text-transform: capitalize;">{{article.address | safe }}</span>
+  </div>
+
+  <p style="padding-top: 25px;"><input onclick="window.print()" class="btn btn-primary" value="Print details"></p>
+  <p style="padding-top: 25px;"><input class="btn btn-primary" value="Attendance"><small>   coming soon</small></p>
+  <p style="padding-top: 25px;"><input class="btn btn-primary" value="Evaluation"><small>   coming soon</small></p>
+
+{% endblock %}
